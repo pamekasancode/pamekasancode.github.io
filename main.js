@@ -6,7 +6,11 @@ function openGallery() {
   })
 }
 
-var music = new Audio("bs.mp3");
-music.loop = true;
-music.volume = 0.7;
-music.play()
+function ost() {
+  var music = new Audio("bs.mp3");
+  music.loop = true;
+  music.volume = 0.7;
+  music.play()
+}
+
+ost();
