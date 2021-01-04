@@ -82,7 +82,7 @@ body, html {
   margin-top: 20px;
   border-radius: 10px;
   outline: none;
-  transition: 300ms;
+  transition: .3s;
 }
 
 .hero .content button:hover {
