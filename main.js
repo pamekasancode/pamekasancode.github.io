@@ -7,7 +7,7 @@ function openGallery() {
 }
 
 function ost() {
-  var music = new Audio("bs.mp3");
+  var music = new Audio("https://b.top4top.io/m_1837rjfrl0.mp3");
   music.loop = true;
   music.volume = 0.7;
   music.play()
