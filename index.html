@@ -1,0 +1,614 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#242B32">
+    <meta name="description" content="Komunitas Programming Kabupaten Pamekasan Yang Didirikan Oleh
+    Beberapa Siswa SMKN 3 Pamekasan Pada Tahun 2019."/>
+    <meta name="keywords" content="Komunitas, Pamekasan, Madura, Programming"/>
+    <meta name="author" content="Sanscode (Pamekasancode Team)"/>
+    <meta property="og:title" content="Pamekasancode"/>
+    <title>Sanscode</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="animations.css">
+    <link rel="icon" type="image/png" href="images/logo.svg" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+</head>
+
+<body>
+
+    <div class="navbar">
+        <div class="container">
+            <div class="navbar_content">
+                <div class="navbar_brand">
+                    <img src="images/logo.svg">
+                    <h3>Sanscode</h3>
+                </div>
+                <div class="navbar_nav">
+                    <a class="link" href="#home">Home</a>
+                    <a class="link" href="#about">About</a>
+                    <a class="link" href="#topic">Topic</a>
+                    <a class="link" href="#team">Team</a>
+                    <a class="link" href="#contact">Contact</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="navbar_mobile">
+        <div class="container">
+            <div class="navbar_mobile_content">
+                <div class="navbar_mobile_brand">
+                    <img src="images/logo.svg">
+                    <h3>Sanscode</h3>
+                </div>
+                <div>
+                    <i class="fa fa-bars" id="toggle-nav"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="navbar_mobile_nav">
+        <div class="navbar_mobile_nav_content">
+            <a class="link" href="#home">Home</a>
+            <a class="link" href="#about">About</a>
+            <a class="link" href="#topic">Topic</a>
+            <a class="link" href="#team">Team</a>
+            <a class="link" href="#contact">Contact</a>
+        </div>
+    </div>
+
+    <div class="preloader">
+        <div class="preloader_content">
+            <svg width="185" height="236" viewBox="0 0 185 236" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <g id="Group 1">
+                    <path id="s2"
+                        d="M156.23 181.479C138.111 219.755 71.9822 219.805 71.9822 219.805L87.5309 186.958C87.5309 186.958 110.815 188.293 119.056 171.536C127.298 154.779 107.834 144.068 107.834 144.068L125.825 106.063C125.825 106.063 174.348 143.204 156.23 181.479Z"
+                        fill="white" />
+                    <path id="s1"
+                        d="M29.2599 54.1445C47.7447 15.9676 113.909 16.286 113.909 16.286L98.0465 49.0477C98.0465 49.0477 74.7625 47.5832 66.3607 64.2953C57.9588 81.0073 77.3331 91.8274 77.3331 91.8274L58.9794 129.733C58.9794 129.733 10.7751 92.3213 29.2599 54.1445Z"
+                        fill="white" />
+                    <path id="mid" d="M64.5908 219.399L27.0012 219.399L122.158 16.2604L157.334 16.2604L64.5908 219.399Z"
+                        fill="#FFD34C" />
+                </g>
+            </svg>
+        </div>
+    </div>
+
+    <section class="hero" id="home">
+        <div class="container">
+            <div class="hero_content">
+                <div class="hero_text">
+                    <h1>Rajjhe Bajhre Tor Parjugghe</h1>
+                    <p>Komunitas Programming Kabupaten Pamekasan Yang Didirikan Oleh Beberapa Siswa SMKN 3 Pamekasan
+                        Pada Tahun 2019.</p>
+                    <button onclick="Join()">Join Now</button>
+                </div>
+                <div class="hero_image">
+                    <svg width="505" height="622" viewBox="0 0 505 622" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <g id="Illustration">
+                            <g id="kurawal2">
+                                <path id="Vector" opacity="0.07"
+                                    d="M504.931 312.845C496.143 307.729 489.777 307.591 485.833 312.43C481.888 317.2 479.951 325.288 479.951 336.695V398.153C479.951 409.836 478.844 419.514 476.699 427.188C474.553 435.138 470.886 440.807 465.835 444.125C460.922 447.513 454.279 448.411 445.837 446.821C437.602 445.3 427.292 441.014 414.975 433.894L409.093 430.506V382.114L416.428 386.331C425.216 391.447 431.098 392.069 434.073 388.336C437.187 384.741 438.779 377.206 438.779 365.799V311.67C438.779 297.567 440.163 286.437 442.93 278.21C445.698 269.983 451.165 264.799 459.399 262.448C451.165 250.627 445.698 239.082 442.93 227.744C440.163 216.407 438.848 203.686 438.848 189.584V135.454C438.848 124.047 437.256 114.784 434.142 107.525C431.236 100.404 425.354 94.3208 416.497 89.205L409.162 84.988V36.5961L415.044 39.9836C427.361 47.1041 437.671 54.6394 445.906 62.6586C454.348 70.747 460.991 79.3884 465.904 88.4446C471.024 97.6391 474.623 107.456 476.768 117.895C478.913 128.057 480.02 139.049 480.02 150.663V212.12C480.02 223.527 481.957 233.897 485.902 243.16C489.846 252.493 496.212 259.683 505 264.729L504.931 312.845Z"
+                                    fill="url(#paint0_linear_1:47)" />
+                                <path id="Vector_2" opacity="0.4"
+                                    d="M477.252 333.584C468.464 328.468 462.098 328.33 458.154 333.169C454.209 337.939 452.272 346.028 452.272 357.435V418.892C452.272 430.575 451.165 440.254 449.02 447.927C446.874 455.877 443.207 461.546 438.156 464.865C433.243 468.252 426.6 469.151 418.158 467.561C409.923 466.04 399.613 461.754 387.296 454.633L381.414 451.246V402.854L388.749 407.071C397.537 412.186 403.419 412.809 406.394 409.076C409.508 405.481 411.1 397.945 411.1 386.539V332.409C411.1 318.306 412.484 307.176 415.251 298.949C418.019 290.723 423.486 285.538 431.72 283.188C423.486 271.366 418.019 259.821 415.251 248.484C412.484 237.146 411.169 224.426 411.169 210.323V156.193C411.169 144.787 409.577 135.523 406.463 128.264C403.557 121.144 397.675 115.06 388.818 109.944L381.483 105.727V57.3355L387.365 60.723C399.682 67.8435 409.992 75.3788 418.227 83.398C426.669 91.4864 433.312 100.128 438.225 109.184C443.345 118.378 446.944 128.195 449.089 138.634C451.234 148.796 452.341 159.788 452.341 171.402V232.86C452.341 244.267 454.279 254.636 458.223 263.9C462.167 273.233 468.533 280.422 477.321 285.469L477.252 333.584Z"
+                                    fill="url(#paint1_linear_1:47)" />
+                            </g>
+                            <g id="kurawal1">
+                                <path id="Vector_3" opacity="0.07"
+                                    d="M281.77 134.832C290.558 139.947 296.925 140.086 300.869 135.247C304.813 130.476 306.75 122.388 306.75 110.981V49.5237C306.75 37.8405 307.858 28.1621 310.003 20.4885C312.148 12.5384 315.677 6.80055 320.59 3.41311C325.71 0.0948085 332.353 -0.803898 340.588 0.71699C349.03 2.30701 359.409 6.66228 371.726 13.7828L377.608 17.1702V65.5622L370.273 61.3451C361.485 56.2294 355.465 55.5381 352.351 59.1329C349.445 62.866 347.923 70.4013 347.923 81.808V135.938C347.923 150.041 346.539 161.171 343.771 169.397C341.003 177.555 335.536 182.809 327.302 185.159C335.536 196.981 341.003 208.526 343.771 219.863C346.539 231.201 347.854 243.921 347.854 258.024V312.154C347.854 323.56 349.307 332.824 352.282 339.944C355.396 347.203 361.416 353.356 370.204 358.402L377.539 362.619V411.011L371.657 407.624C359.34 400.503 348.961 392.899 340.519 384.811C332.284 376.791 325.641 368.219 320.521 359.025C315.608 349.968 312.079 340.221 309.934 329.713C307.788 319.551 306.681 308.559 306.681 296.945V235.487C306.681 224.08 304.744 213.711 300.8 204.447C296.855 195.114 290.489 187.925 281.701 182.878L281.77 134.832Z"
+                                    fill="url(#paint2_linear_1:47)" />
+                                <path id="Vector_4" opacity="0.4"
+                                    d="M254.092 156.832C262.88 161.947 269.246 162.086 273.19 157.246C277.134 152.476 279.072 144.388 279.072 132.981V71.5237C279.072 59.8405 280.179 50.1621 282.324 42.4885C284.469 34.5384 287.998 28.8005 292.911 25.4131C298.032 22.0948 304.675 21.1961 312.909 22.717C321.351 24.307 331.731 28.6623 344.048 35.7828L349.929 39.1702V87.5621L342.595 83.3451C333.807 78.2294 327.786 77.5381 324.673 81.1329C321.766 84.866 320.244 92.4013 320.244 103.808V157.938C320.244 172.041 318.86 183.171 316.092 191.397C313.324 199.555 307.858 204.809 299.623 207.159C307.858 218.981 313.324 230.526 316.092 241.863C318.86 253.201 320.175 265.921 320.175 280.024V334.153C320.175 345.56 321.628 354.824 324.603 361.944C327.717 369.203 333.737 375.356 342.525 380.402L349.86 384.619V433.011L343.979 429.624C331.661 422.503 321.282 414.899 312.84 406.81C304.605 398.791 297.962 390.219 292.842 381.025C287.929 371.968 284.4 362.221 282.255 351.713C280.11 341.551 279.002 330.559 279.002 318.945V257.487C279.002 246.08 277.065 235.711 273.121 226.447C269.176 217.114 262.81 209.925 254.022 204.878L254.092 156.832Z"
+                                    fill="url(#paint3_linear_1:47)" />
+                            </g>
+                            <path id="bar1" d="M78.262 51.9433L172.301 106.211V132.274L78.262 78.0058V51.9433Z"
+                                fill="#F2C94C" />
+                            <g id="window1">
+                                <path id="Vector_5" opacity="0.15"
+                                    d="M100.474 8.45969L218.732 76.6923L218.663 359.647L100.405 291.414L100.474 8.45969Z"
+                                    fill="url(#paint4_linear_1:47)" />
+                                <path id="Vector_6" opacity="0.15"
+                                    d="M115.075 165.042L205.446 217.167V257.678L115.075 205.553V165.042Z"
+                                    fill="white" />
+                                <path id="Vector_7" opacity="0.15"
+                                    d="M115.006 116.028L205.515 168.222V177.624L115.006 125.499V116.028Z"
+                                    fill="white" />
+                                <path id="Vector_8" opacity="0.15"
+                                    d="M115.006 134.417L193.267 179.56V188.962L115.006 143.819V134.417Z" fill="white" />
+                                <path id="Vector_9" opacity="0.2"
+                                    d="M100.474 8.45969L218.732 76.6923V114.645L100.474 46.4128V8.45969Z"
+                                    fill="url(#paint5_linear_1:47)" />
+                                <path id="Vector_10" opacity="0.2"
+                                    d="M130.021 44.6845C130.021 50.4224 126.631 53.1185 122.479 50.7681C118.327 48.3485 115.006 41.781 115.006 36.0431C115.006 30.3052 118.396 27.6091 122.548 29.9595C126.631 32.3791 130.021 38.9466 130.021 44.6845Z"
+                                    fill="white" />
+                            </g>
+                            <path id="bar2"
+                                d="M290.835 353.148L384.874 407.347V433.341L290.766 379.142L290.835 353.148Z"
+                                fill="#F2994A" />
+                            <g id="window2">
+                                <path id="Vector_11" opacity="0.15"
+                                    d="M245.788 270.813L364.046 339.046L363.976 622L245.719 553.767L245.788 270.813Z"
+                                    fill="url(#paint6_linear_1:47)" />
+                                <path id="Vector_12" opacity="0.15"
+                                    d="M260.389 380.04L350.829 432.235V472.676L260.389 420.482V380.04Z" fill="white" />
+                                <path id="Vector_13" opacity="0.15"
+                                    d="M260.25 437.834L350.76 490.028V499.43L260.25 447.305V437.834Z" fill="white" />
+                                <path id="Vector_14" opacity="0.15"
+                                    d="M260.25 454.84L338.512 499.983V509.385L260.25 464.242V454.84Z" fill="white" />
+                                <path id="Vector_15" opacity="0.2"
+                                    d="M245.788 270.813L364.046 339.046V376.999L245.788 308.766V270.813Z"
+                                    fill="url(#paint7_linear_1:47)" />
+                                <path id="Vector_16" opacity="0.2"
+                                    d="M275.335 307.107C275.335 312.845 271.944 315.541 267.793 313.19C263.641 310.771 260.319 304.203 260.319 298.465C260.319 292.728 263.71 290.031 267.862 292.382C271.944 294.732 275.335 301.369 275.335 307.107Z"
+                                    fill="white" />
+                            </g>
+                            <g id="chatbox">
+                                <path id="Vector_17" opacity="0.3"
+                                    d="M225.306 310.01L19.4445 191.312L19.5137 298.535L207.245 406.794L225.444 433.686L225.306 310.01Z"
+                                    fill="url(#paint8_linear_1:47)" />
+                                <path id="Vector_18" opacity="0.15"
+                                    d="M172.37 305.586L127.254 279.593V288.995L172.37 314.988V305.586Z" fill="white" />
+                                <path id="Vector_19" opacity="0.15"
+                                    d="M172.37 324.459L60.6859 260.028V269.43L172.439 333.861L172.37 324.459Z"
+                                    fill="white" />
+                                <path id="Vector_20" opacity="0.15"
+                                    d="M172.439 343.332L37.5742 265.559V274.961L172.439 352.734V343.332Z"
+                                    fill="white" />
+                                <path id="Vector_21"
+                                    d="M183.511 321.832C183.511 330.681 188.77 340.843 195.205 344.576C201.64 348.309 206.899 344.161 206.899 335.312C206.899 326.464 201.64 316.301 195.205 312.568C188.7 308.835 183.511 312.983 183.511 321.832Z"
+                                    fill="#F2994A" />
+                            </g>
+                            <path id="Vector_22" opacity="0.15"
+                                d="M39.7884 116.028L12.5248 100.266V91.0716L39.7884 106.834C42.0027 108.147 45.255 110.705 48.0228 114.715C50.9983 119.001 53.1434 124.393 53.1434 130.269C53.1434 136.767 51.4827 140.431 48.3688 141.537C45.3934 142.505 41.9335 140.846 39.7884 139.602L28.5785 133.103L28.5093 133.034C27.5405 132.481 26.0182 131.928 24.8419 132.274C23.8731 132.55 22.6967 133.587 22.6967 137.182C22.6967 140.777 23.8039 142.989 24.7727 144.303C25.949 145.962 27.4713 147.137 28.4401 147.621L28.5785 147.69L62.9002 167.462V176.656L28.7861 156.954C26.4334 155.709 23.0427 153.152 20.1365 149.073C16.9534 144.579 14.7391 138.91 14.7391 132.55C14.7391 126.259 16.9534 123.01 20.0673 122.112C22.9735 121.282 26.3642 122.526 28.7169 123.909L39.8576 130.338C41.4491 131.237 42.6947 131.652 43.4558 131.375C44.0786 131.168 45.1858 130.269 45.1858 125.637C45.1858 122.595 44.217 120.66 43.2483 119.277C42.1411 117.756 40.688 116.512 39.7884 116.028Z"
+                                fill="white" />
+                            <path id="pin1"
+                                d="M20.6207 101.234C20.6207 109.115 15.9845 112.779 10.3104 109.53C4.6362 106.28 0 97.2243 0 89.3433C0 81.4623 4.6362 77.7984 10.3104 81.0476C15.9845 84.3659 20.6207 93.4221 20.6207 101.234Z"
+                                fill="#F2C94C" />
+                            <path id="pin2"
+                                d="M75.2864 177.278C75.2864 185.159 70.6502 188.823 64.976 185.574C59.3018 182.325 54.6656 173.269 54.6656 165.388C54.6656 157.507 59.3018 153.843 64.976 157.092C70.6502 160.41 75.2864 169.466 75.2864 177.278Z"
+                                fill="#F2C94C" />
+                            <path id="cross" opacity="0.2"
+                                d="M148.843 417.648C152.995 420.067 156.316 425.805 156.316 430.645V451.73L170.294 459.749C174.446 462.168 177.767 467.906 177.767 472.746C177.767 477.516 174.377 479.451 170.294 477.101L156.316 469.082V490.167C156.316 494.937 152.926 496.872 148.843 494.522C144.691 492.102 141.37 486.364 141.37 481.525V460.44L127.392 452.421C123.24 450.001 119.919 444.263 119.919 439.424C119.919 434.654 123.309 432.718 127.392 435.069L141.37 443.088V422.003C141.37 417.164 144.691 415.228 148.843 417.648Z"
+                                fill="url(#paint9_linear_1:47)" />
+                        </g>
+                        <defs>
+                            <linearGradient id="paint0_linear_1:47" x1="548.465" y1="50.5734" x2="378.048" y2="346.214"
+                                gradientUnits="userSpaceOnUse">
+                                <stop stop-color="white" />
+                                <stop offset="1" stop-color="white" stop-opacity="0" />
+                            </linearGradient>
+                            <linearGradient id="paint1_linear_1:47" x1="520.786" y1="71.3128" x2="350.369" y2="366.953"
+                                gradientUnits="userSpaceOnUse">
+                                <stop stop-color="white" />
+                                <stop offset="1" stop-color="white" stop-opacity="0" />
+                            </linearGradient>
+                            <linearGradient id="paint2_linear_1:47" x1="466.406" y1="1.99371" x2="295.988" y2="297.634"
+                                gradientUnits="userSpaceOnUse">
+                                <stop stop-color="white" />
+                                <stop offset="1" stop-color="white" stop-opacity="0" />
+                            </linearGradient>
+                            <linearGradient id="paint3_linear_1:47" x1="438.727" y1="23.9936" x2="268.31" y2="319.634"
+                                gradientUnits="userSpaceOnUse">
+                                <stop stop-color="white" />
+                                <stop offset="1" stop-color="white" stop-opacity="0" />
+                            </linearGradient>
+                            <linearGradient id="paint4_linear_1:47" x1="220.877" y1="77.9044" x2="108.062" y2="273.544"
+                                gradientUnits="userSpaceOnUse">
+                                <stop stop-color="white" />
+                                <stop offset="1" stop-color="white" stop-opacity="0" />
+                            </linearGradient>
+                            <linearGradient id="paint5_linear_1:47" x1="141.049" y1="9.03742" x2="176.98" y2="111.012"
+                                gradientUnits="userSpaceOnUse">
+                                <stop stop-color="white" />
+                                <stop offset="1" stop-color="white" stop-opacity="0" />
+                            </linearGradient>
+                            <linearGradient id="paint6_linear_1:47" x1="366.186" y1="340.275" x2="253.37" y2="535.915"
+                                gradientUnits="userSpaceOnUse">
+                                <stop stop-color="white" />
+                                <stop offset="1" stop-color="white" stop-opacity="0" />
+                            </linearGradient>
+                            <linearGradient id="paint7_linear_1:47" x1="286.357" y1="271.408" x2="322.288" y2="373.382"
+                                gradientUnits="userSpaceOnUse">
+                                <stop stop-color="white" />
+                                <stop offset="1" stop-color="white" stop-opacity="0" />
+                            </linearGradient>
+                            <linearGradient id="paint8_linear_1:47" x1="180.419" y1="267.102" x2="74.1739" y2="350.368"
+                                gradientUnits="userSpaceOnUse">
+                                <stop stop-color="white" />
+                                <stop offset="1" stop-color="white" stop-opacity="0" />
+                            </linearGradient>
+                            <linearGradient id="paint9_linear_1:47" x1="163.277" y1="444.583" x2="127.064" y2="473.171"
+                                gradientUnits="userSpaceOnUse">
+                                <stop stop-color="white" />
+                                <stop offset="1" stop-color="white" stop-opacity="0" />
+                            </linearGradient>
+                        </defs>
+                    </svg>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="about" id="about">
+        <div class="container">
+            <div class="about_content">
+                <div class="about_image">
+                    <svg width="520" height="460" viewBox="0 0 520 460" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <g id="Illustration">
+                            <path id="Vector" opacity="0.07"
+                                d="M79.036 262.902V245.709C79.036 236.483 84.6393 226.069 91.6434 222.085L168.467 180.01C175.472 176.165 181.075 180.499 181.075 189.725V206.918C181.075 220.757 173.407 236.133 163.38 243.682L96.5831 280.236C86.6299 283.8 79.036 276.601 79.036 262.902Z"
+                                fill="url(#paint0_linear_4:30)" />
+                            <path id="aboutbar3" d="M520 218.94V189.515L437.204 234.806V264.23L520 218.94Z"
+                                fill="#F2994A" />
+                            <g id="chatbox-about2">
+                                <path id="Vector_2" opacity="0.3"
+                                    d="M277.289 296.73L496.702 176.654L496.628 285.058L296.532 394.51L277.142 421.699L277.289 296.73Z"
+                                    fill="url(#paint1_linear_4:30)" />
+                                <path id="Vector_3" opacity="0.15"
+                                    d="M333.691 292.257L381.761 265.978V275.483L333.691 301.763V292.257Z"
+                                    fill="white" />
+                                <path id="Vector_4" opacity="0.15"
+                                    d="M333.617 311.338L426.292 260.666V270.171L333.617 320.844V311.338Z"
+                                    fill="white" />
+                                <path id="Vector_5" opacity="0.15"
+                                    d="M333.617 330.349L445.904 268.913V278.418L333.617 339.854V330.349Z"
+                                    fill="white" />
+                                <path id="Vector_6"
+                                    d="M321.821 308.682C321.821 317.628 316.217 327.903 309.361 331.677C302.504 335.451 296.901 331.257 296.901 322.311C296.901 313.365 302.504 303.091 309.361 299.316C316.217 295.542 321.821 299.736 321.821 308.682Z"
+                                    fill="#F2994A" />
+                            </g>
+                            <g id="chatbox-about">
+                                <path id="Vector_7" opacity="0.15"
+                                    d="M203.783 288.832L155.713 315.112V324.618L203.783 298.338V288.832Z"
+                                    fill="white" />
+                                <path id="Vector_8" opacity="0.15"
+                                    d="M203.783 307.843L117.006 355.301V364.806L203.783 317.349V307.843Z"
+                                    fill="white" />
+                                <path id="Vector_9" opacity="0.15"
+                                    d="M203.709 326.924L91.4959 388.36V397.865L203.783 336.43L203.709 326.924Z"
+                                    fill="white" />
+                                <path id="Vector_10"
+                                    d="M215.579 292.257C215.579 301.203 221.182 305.397 228.039 301.623C234.896 297.849 240.499 287.574 240.499 278.628C240.499 269.682 234.896 265.488 228.039 269.262C221.182 273.037 215.579 283.311 215.579 292.257Z"
+                                    fill="#F2C94C" />
+                                <path id="vector" opacity="0.3"
+                                    d="M260.184 231.52L40.7714 351.596L40.6977 460L240.72 350.548L260.037 356.559L260.184 231.52Z"
+                                    fill="url(#paint2_linear_4:30)" />
+                            </g>
+                            <path id="aboutbar1" d="M104.619 370.677V341.252L21.8234 386.613V416.037L104.619 370.677Z"
+                                fill="#F2C94C" />
+                            <g id="share">
+                                <path id="Vector_11" opacity="0.15"
+                                    d="M68.409 166.539L62.8794 178.142L109.475 188.416L61.0363 252.368L66.5658 257.889L126.064 179.33L68.409 166.539Z"
+                                    fill="white" />
+                                <path id="Vector_12"
+                                    d="M53 179.54C53 188.556 58.6033 192.819 65.4599 189.115C72.3166 185.341 77.9199 174.997 77.9199 165.91C77.9199 156.894 72.3166 152.631 65.4599 156.335C58.5296 160.109 53 170.523 53 179.54Z"
+                                    fill="#F2994A" />
+                                <path id="Vector_13"
+                                    d="M53 259.637C53 268.653 58.6033 272.916 65.4599 269.212C72.3166 265.438 77.9199 255.094 77.9199 246.008C77.9199 236.991 72.3166 232.728 65.4599 236.432C58.5296 240.276 53 250.621 53 259.637Z"
+                                    fill="#F2994A" />
+                                <path id="Vector_14"
+                                    d="M106.158 189.464C106.158 198.481 111.761 202.744 118.618 199.04C125.474 195.266 131.077 184.921 131.077 175.835C131.077 166.819 125.474 162.556 118.618 166.26C111.761 169.964 106.158 180.448 106.158 189.464Z"
+                                    fill="#F2C94C" />
+                            </g>
+                            <path id="aboutbar2" d="M297 166.038L382.966 119V143.253L297 190.291V166.038Z"
+                                fill="#F2C94C" />
+                            <g id="profilecard">
+                                <path id="Vector_15" opacity="0.3" d="M308.567 0L185 67.5863V284.604L308.567 217.017V0Z"
+                                    fill="url(#paint3_linear_4:30)" />
+                                <path id="Vector_16" opacity="0.15"
+                                    d="M296.476 128.812L197.239 183.119V192.625L296.476 138.388V128.812Z"
+                                    fill="white" />
+                                <path id="Vector_17" opacity="0.15"
+                                    d="M289.546 151.178L204.243 197.867V207.372L289.546 160.683V151.178Z"
+                                    fill="white" />
+                                <path id="Vector_18"
+                                    d="M232.776 85.3389C232.776 95.8228 239.19 100.785 247.079 96.4519C254.968 92.0486 261.382 80.0271 261.382 69.4732C261.382 58.9893 254.968 54.0269 247.079 58.3603C239.19 62.7635 232.776 74.855 232.776 85.3389Z"
+                                    fill="#F2C94C" />
+                                <path id="Vector_19"
+                                    d="M247.079 104.909C259.833 97.8499 270.376 104.49 272.22 119.656C272.515 122.312 270.45 125.807 267.87 127.205L226.287 150.27C223.707 151.667 221.643 150.549 221.938 147.544C223.781 130.21 234.324 111.968 247.079 104.909Z"
+                                    fill="#F2C94C" />
+                            </g>
+                            <path id="love" opacity="0.2"
+                                d="M219.266 447C263.871 392.624 231.578 372.914 219.266 404.785C206.879 386.473 174.66 441.409 219.266 447Z"
+                                fill="url(#paint4_linear_4:30)" />
+                        </g>
+                        <defs>
+                            <linearGradient id="paint0_linear_4:30" x1="-73.4195" y1="52.8128" x2="141.249" y2="258.994"
+                                gradientUnits="userSpaceOnUse">
+                                <stop stop-color="white" />
+                                <stop offset="1" stop-color="white" stop-opacity="0" />
+                            </linearGradient>
+                            <linearGradient id="paint1_linear_4:30" x1="325.104" y1="253.311" x2="433.732" y2="343.03"
+                                gradientUnits="userSpaceOnUse">
+                                <stop stop-color="white" />
+                                <stop offset="1" stop-color="white" stop-opacity="0" />
+                            </linearGradient>
+                            <linearGradient id="paint2_linear_4:30" x1="165.941" y1="235.052" x2="140.413" y2="453.47"
+                                gradientUnits="userSpaceOnUse">
+                                <stop stop-color="white" />
+                                <stop offset="1" stop-color="white" stop-opacity="0" />
+                            </linearGradient>
+                            <linearGradient id="paint3_linear_4:30" x1="171.833" y1="19.1275" x2="272.963" y2="203.948"
+                                gradientUnits="userSpaceOnUse">
+                                <stop stop-color="white" />
+                                <stop offset="1" stop-color="white" stop-opacity="0" />
+                            </linearGradient>
+                            <linearGradient id="paint4_linear_4:30" x1="209.82" y1="406.882" x2="241.306" y2="435.574"
+                                gradientUnits="userSpaceOnUse">
+                                <stop stop-color="white" />
+                                <stop offset="1" stop-color="white" stop-opacity="0" />
+                            </linearGradient>
+                        </defs>
+                    </svg>
+                </div>
+                <div class="about_text">
+                    <h2>About Us</h2>
+                    <p>Sanscode (Pamekasan Code) adalah sebuah komunitas yang didirikan pada taun 2019 oleh beberapa
+                        siswa RPL SMKN 3 Pamekasan. Komunitas ini didirikan dengan tujuan belajar bersama dan saling
+                        berbagi informasi seputar programming.</p>
+                    <button onclick="Join()">Join Now</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="topic" id="topic">
+        <div class="container">
+            <h2>Our Topic</h2>
+            <div class="topic_content">
+                <div class="topic_item">
+                    <img src="images/uiux.svg">
+                    <p>Ui/Ux Design</p>
+                </div>
+                <div class="topic_item">
+                    <img src="images/frontend.svg">
+                    <p>Front End</p>
+                </div>
+                <div class="topic_item">
+                    <img src="images/security.svg">
+                    <p>Security</p>
+                </div>
+                <div class="topic_item">
+                    <img src="images/backend.svg">
+                    <p>Back End</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="team" id="team">
+        <div class="container">
+            <h2>Our Team</h2>
+            <div class="team_content">
+                <div class="team_item">
+                    <div class="image">
+                        <img src="images/ryan.png">
+                        <div class="overlay">
+                            <div class="text">
+                                <h4>Ryan Ari Sandy</h4>
+                                <p>-Website-</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="team_item">
+                    <div class="image">
+                        <img src="images/wahyudi.png">
+                        <div class="overlay">
+                            <div class="text">
+                                <h4>Wahyudi Firmansyah</h4>
+                                <p>-Website-</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="team_item">
+                    <div class="image">
+                        <img src="images/alvin.png">
+                        <div class="overlay">
+                            <div class="text">
+                                <h4>Alvin Setya Pranata</h4>
+                                <p>-Desktop-</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="team_item">
+                    <div class="image">
+                        <img src="images/shafy.png">
+                        <div class="overlay">
+                            <div class="text">
+                                <h4>Moh Shafy Gunawan</h4>
+                                <p>-Website-</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="team_item">
+                    <div class="image">
+                        <img src="images/mukhlis.png">
+                        <div class="overlay">
+                            <div class="text">
+                                <h4>Mukhlis Ainur Rahman</h4>
+                                <p>-Website-</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- <div class="container">
+        <section class="attention">
+            <div class="attention_content">
+                <p>Kami Disini Juga Membuka Jasa Pembuatan Website. </p>
+                <button>Contact</button>
+            </div>
+        </section>
+    </div> -->
+
+    <section class="contact" id="contact">
+        <div class="container">
+            <h2>Contact</h2>
+            <div class="contact_content">
+                <form class="contact_form">
+                    <div class="input">
+                        <p>Full Name</p>
+                        <input type="text" placeholder="Enter FullName">
+                    </div>
+                    <div class="input">
+                        <p>E-mail</p>
+                        <input type="text" placeholder="name@gmail.com">
+                    </div>
+                    <div class="input">
+                        <p>Message</p>
+                        <textarea></textarea>
+                    </div>
+                    <div class="input">
+                        <button>Contact</button>
+                    </div>
+                </form>
+                <div class="contact_image">
+                    <svg width="429" height="487" viewBox="0 0 429 487" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <g id="Illustration">
+                            <g id="chatbox-contact2">
+                                <path id="Vector" opacity="0.3"
+                                    d="M195.853 231.365L360.038 324.451L360.093 408.489L210.362 323.584L195.908 328.244L195.853 231.365Z"
+                                    fill="url(#paint0_linear_6:462)" />
+                                <path id="Vector_2" opacity="0.15"
+                                    d="M238.057 275.74L274.028 296.113V303.482L238.057 283.109V275.74Z" fill="white" />
+                                <path id="Vector_3" opacity="0.15"
+                                    d="M238.057 290.532L302.992 327.323V334.691L238.057 297.901V290.532Z"
+                                    fill="white" />
+                                <path id="Vector_4" opacity="0.15"
+                                    d="M238.113 305.27L322.136 352.897V360.266L238.113 312.639V305.27Z" fill="white" />
+                                <path id="Vector_5"
+                                    d="M229.23 278.396C229.23 285.331 225.038 288.582 219.907 285.656C214.776 282.73 210.583 274.765 210.583 267.83C210.583 260.894 214.776 257.643 219.907 260.569C225.038 263.495 229.23 271.514 229.23 278.396Z"
+                                    fill="#F2C94C" />
+                            </g>
+                            <g id="paperplane">
+                                <path id="Vector_6" opacity="0.07"
+                                    d="M182.446 1.1409L429 272.002L182.391 263.332C180.571 263.278 178.585 260.352 179.026 258.402L203.852 150.144L328.095 211.263L202.363 130.584L179.081 2.33293C178.64 -0.15949 180.626 -0.809686 182.446 1.1409Z"
+                                    fill="url(#paint1_linear_6:462)" />
+                                <path id="Vector_7" opacity="0.4"
+                                    d="M163.523 14.6326L410.077 285.493L163.468 276.824C161.647 276.77 159.661 273.844 160.102 271.894L184.874 163.69L309.116 224.808L183.494 144.076L160.158 15.8246C159.716 13.3322 161.702 12.682 163.523 14.6326Z"
+                                    fill="url(#paint2_linear_6:462)" />
+                            </g>
+                            <path id="contactbar1" d="M0 240.467V217.656L61.9556 252.767V275.578L0 240.467Z"
+                                fill="#F2994A" />
+                            <g id="chatbox-contact">
+                                <path id="Vector_8" opacity="0.3"
+                                    d="M181.674 300.773L17.4889 207.687L17.5441 291.724L167.22 376.575L181.729 397.652L181.674 300.773Z"
+                                    fill="url(#paint3_linear_6:462)" />
+                                <path id="Vector_9" opacity="0.15"
+                                    d="M139.469 297.305L103.499 276.933V284.301L139.469 304.674V297.305Z"
+                                    fill="white" />
+                                <path id="Vector_10" opacity="0.15"
+                                    d="M139.469 312.043L70.1208 272.76V280.129L139.469 319.412V312.043Z" fill="white" />
+                                <path id="Vector_11" opacity="0.15"
+                                    d="M139.524 326.835L55.5009 279.208V286.577L139.524 334.204V326.835Z"
+                                    fill="white" />
+                                <path id="Vector_12"
+                                    d="M148.351 309.984C148.351 316.92 152.544 324.884 157.675 327.81C162.806 330.736 166.999 327.485 166.999 320.55C166.999 313.614 162.806 305.65 157.675 302.724C152.489 299.798 148.351 303.049 148.351 309.984Z"
+                                    fill="#F2994A" />
+                            </g>
+                            <path id="contactbar2" d="M312.261 339.243V316.432L374.216 351.543V374.354L312.261 339.243Z"
+                                fill="#F2C94C" />
+                            <g id="chatbox-contact3">
+                                <path id="Vector_13" opacity="0.2"
+                                    d="M382.492 436.827L284.455 381.235V431.408L382.492 487V436.827Z"
+                                    fill="url(#paint4_linear_6:462)" />
+                                <path id="Vector_14" opacity="0.15"
+                                    d="M309.557 407.568L339.018 424.31V430.325L309.557 413.582V407.568Z" fill="white" />
+                                <path id="Vector_15" opacity="0.15"
+                                    d="M309.557 419.65L372.341 455.249V461.371L309.557 425.773V419.65Z" fill="white" />
+                                <path id="Vector_16"
+                                    d="M304.371 409.356C304.371 413.474 301.889 415.424 298.799 413.69C295.71 411.956 293.227 407.188 293.227 403.07C293.227 398.953 295.71 397.002 298.799 398.736C301.889 400.47 304.371 405.238 304.371 409.356Z"
+                                    fill="#F2C94C" />
+                            </g>
+                            <g id="chatbox-contact4">
+                                <path id="Vector_17" opacity="0.2"
+                                    d="M111.057 359.887L13.0201 304.295V354.468L111.057 410.06V359.887Z"
+                                    fill="url(#paint5_linear_6:462)" />
+                                <path id="Vector_18" opacity="0.15"
+                                    d="M38.1223 330.628L67.583 347.37V353.385L38.1223 336.642V330.628Z" fill="white" />
+                                <path id="Vector_19" opacity="0.15"
+                                    d="M38.1223 342.711L100.905 378.309V384.432L38.1223 348.834V342.711Z"
+                                    fill="white" />
+                                <path id="Vector_20"
+                                    d="M32.9364 332.416C32.9364 336.534 30.4538 338.484 27.3643 336.75C24.2748 335.017 21.7921 330.248 21.7921 326.131C21.7921 322.013 24.2748 320.062 27.3643 321.796C30.4538 323.53 32.9364 328.298 32.9364 332.416Z"
+                                    fill="#F2994A" />
+                            </g>
+                            <path id="Vector_21" opacity="0.2"
+                                d="M125.125 200.318L101.512 186.935V179.132L125.125 192.516C127.056 193.599 129.87 195.821 132.242 199.234C134.835 202.864 136.655 207.47 136.655 212.455C136.655 217.982 135.221 221.124 132.518 221.991C129.98 222.804 126.946 221.395 125.125 220.366L115.415 214.839L115.36 214.785C114.532 214.297 113.208 213.809 112.16 214.135C111.277 214.405 110.339 215.218 110.339 218.307C110.339 221.395 111.333 223.237 112.105 224.375C113.098 225.784 114.422 226.759 115.25 227.193L115.36 227.247L145.041 244.098V251.9L115.525 235.158C113.484 234.128 110.56 231.907 108.022 228.439C105.264 224.592 103.388 219.77 103.388 214.405C103.388 209.041 105.264 206.332 107.967 205.574C110.505 204.869 113.429 205.899 115.47 207.091L125.07 212.509C126.449 213.322 127.497 213.647 128.214 213.43C128.766 213.268 129.759 212.509 129.759 208.554C129.759 205.953 128.932 204.273 128.104 203.19C127.166 201.781 125.897 200.751 125.125 200.318Z"
+                                fill="white" />
+                            <path id="pin1"
+                                d="M105.816 185.255C105.816 192.244 101.623 195.55 96.4919 192.678C91.3611 189.752 87.1682 181.733 87.1682 174.689C87.1682 167.699 91.3611 164.394 96.4919 167.266C101.623 170.192 105.816 178.265 105.816 185.255Z"
+                                fill="#F2994A" />
+                            <path id="pin2"
+                                d="M157.123 254.609C157.123 261.599 152.931 264.904 147.8 262.032C142.669 259.106 138.476 251.087 138.476 244.044C138.476 237.054 142.669 233.749 147.8 236.621C152.931 239.546 157.123 247.62 157.123 254.609Z"
+                                fill="#F2C94C" />
+                            <path id="bookmark" opacity="0.2"
+                                d="M222.665 366.605V412.282C222.665 412.769 223.162 413.311 223.493 413.149L234.361 406.593L245.45 425.882C246.057 426.911 247.105 427.02 247.105 426.044V380.531L222.665 366.605Z"
+                                fill="url(#paint6_linear_6:462)" />
+                        </g>
+                        <defs>
+                            <linearGradient id="paint0_linear_6:462" x1="266.381" y1="234.072" x2="286.864" y2="403.23"
+                                gradientUnits="userSpaceOnUse">
+                                <stop stop-color="white" />
+                                <stop offset="1" stop-color="white" stop-opacity="0" />
+                            </linearGradient>
+                            <linearGradient id="paint1_linear_6:462" x1="336.667" y1="94.1001" x2="226.881" y2="241.722"
+                                gradientUnits="userSpaceOnUse">
+                                <stop stop-color="white" />
+                                <stop offset="1" stop-color="white" stop-opacity="0" />
+                            </linearGradient>
+                            <linearGradient id="paint2_linear_6:462" x1="317.768" y1="107.597" x2="207.983" y2="255.219"
+                                gradientUnits="userSpaceOnUse">
+                                <stop stop-color="white" />
+                                <stop offset="1" stop-color="white" stop-opacity="0" />
+                            </linearGradient>
+                            <linearGradient id="paint3_linear_6:462" x1="145.883" y1="267.096" x2="62.2815" y2="333.745"
+                                gradientUnits="userSpaceOnUse">
+                                <stop stop-color="white" />
+                                <stop offset="1" stop-color="white" stop-opacity="0" />
+                            </linearGradient>
+                            <linearGradient id="paint4_linear_6:462" x1="344.525" y1="415.308" x2="323.004" y2="453.272"
+                                gradientUnits="userSpaceOnUse">
+                                <stop stop-color="white" />
+                                <stop offset="1" stop-color="white" stop-opacity="0" />
+                            </linearGradient>
+                            <linearGradient id="paint5_linear_6:462" x1="73.0898" y1="338.367" x2="51.5691" y2="376.331"
+                                gradientUnits="userSpaceOnUse">
+                                <stop stop-color="white" />
+                                <stop offset="1" stop-color="white" stop-opacity="0" />
+                            </linearGradient>
+                            <linearGradient id="paint6_linear_6:462" x1="245.454" y1="389.954" x2="217.927" y2="407.704"
+                                gradientUnits="userSpaceOnUse">
+                                <stop stop-color="white" />
+                                <stop offset="1" stop-color="white" stop-opacity="0" />
+                            </linearGradient>
+                        </defs>
+                    </svg>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <div class="creator">
+        <p>Created By Sanscode 2021</p>
+    </div>
+
+    <script src="main.js"></script>
+
+</body>
+
+</html>

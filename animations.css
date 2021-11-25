@@ -1,0 +1,232 @@
+@keyframes updown {
+    0%{
+        transform: translateY(0);
+    }
+    50%{
+        transform: translateY(20px);
+    }
+    100%{
+        transform: translateY(0);
+    }
+}
+
+@keyframes frontback {
+    0%{
+        transform: translateX(0);
+    }
+    50%{
+        transform: translateX(20px);
+    }
+    100%{
+        transform: translateX(0);
+    }
+}
+
+@keyframes leftright {
+    0%{
+        transform: translate(0);
+    }
+    50%{
+        transform: translate(-20px, -20px);
+    }
+    100%{
+        transform: translate(0);
+    }
+}
+
+@keyframes rightleft {
+    0%{
+        transform: translate(0);
+    }
+    50%{
+        transform: translate(20px, 20px);
+    }
+    100%{
+        transform: translate(0);
+    }
+}
+
+@keyframes fade {
+    0%{
+        opacity: 0;
+    }
+    50%{
+        opacity: 0.5;
+    }
+    100%{
+        opacity: 0;
+    }
+}
+
+@keyframes leftright-r {
+    0%{
+        transform: translate(0);
+    }
+    50%{
+        transform: translate(-20px, 20px);
+    }
+    100%{
+        transform: translate(0);
+    }
+}
+
+@keyframes rightleft-r {
+    0%{
+        transform: translate(0);
+    }
+    50%{
+        transform: translate(20px, -20px);
+    }
+    100%{
+        transform: translate(0);
+    }
+}
+
+@keyframes s1 {
+    0%{
+        transform: translate(-25px, 50px);
+        opacity: 0;
+    }
+    100%{
+        transform: translate(0);
+        opacity: 1;
+    }
+}
+
+@keyframes s2 {
+    0%{
+        transform: translate(25px, -50px);
+        opacity: 0;
+    }
+    100%{
+        transform: translate(0);
+        opacity: 1;
+    }
+}
+
+@keyframes mid {
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+
+#kurawal1 {
+    animation: updown 4000ms infinite;
+}
+
+#kurawal2 {
+    animation: rightleft 4000ms infinite;
+}
+
+#window1 {
+    animation: updown 4000ms infinite;
+}
+
+#window2 {
+    animation: updown 4000ms infinite;
+}
+
+#chatbox {
+    animation: leftright 4000ms infinite;
+}
+
+#cross {
+    animation: frontback 3000ms infinite;
+}
+
+#bar1 {
+    animation: leftright 4000ms infinite;
+}
+
+#bar2 {
+    animation: rightleft 4000ms infinite;
+}
+
+#pin1 {
+    animation: fade 4000ms infinite;
+}
+
+#pin2 {
+    animation: fade 4000ms infinite;
+    animation-delay: 10000ms;
+}
+
+#profilecard {
+    animation: updown 4000ms infinite;
+}
+
+#chatbox-about {
+    animation: rightleft-r 4000ms infinite;
+}
+
+#chatbox-about2 {
+    animation: leftright-r 4000ms infinite;
+}
+
+#aboutbar1 {
+    animation: leftright-r 4000ms infinite;
+}
+
+#aboutbar2 {
+    animation: leftright-r 4000ms infinite;
+}
+
+#aboutbar3 {
+    animation: updown 4000ms infinite;
+}
+
+#share {
+    animation: rightleft 4000ms infinite;
+}
+
+#love {
+    animation: fade 4000ms infinite;
+}
+
+#paperplane {
+    animation: rightleft 4000ms infinite;
+}
+
+#contactbar1 {
+    animation: updown 4000ms infinite;
+}
+
+#contactbar2 {
+    animation: updown 4000ms infinite;
+}
+
+#chatbox-contact {
+    animation: rightleft 4000ms infinite;
+}
+
+#chatbox-contact2 {
+    animation: leftright 4000ms infinite;
+}
+
+#chatbox-contact3 {
+    animation: leftright 4000ms infinite;
+}
+
+#chatbox-contact4 {
+    animation: rightleft 4000ms infinite;
+}
+
+#bookmark {
+    animation: updown 4000ms infinite;
+}
+
+#s1 {
+    animation: s1 2000ms;
+}
+
+#mid {
+    animation: mid 2000ms;
+}
+
+#s2 {
+    animation: s2 2000ms;
+}
